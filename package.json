@@ -1,6 +1,7 @@
 {
   "name": "@mbeato/agentcontext-mcp",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "mcpName": "io.github.mbeato/agentcontext",
   "description": "MCP server for @mbeato/agentcontext — exposes read_agent_context and convert_agent_context tools so any MCP-aware agent can normalize CLAUDE.md / AGENTS.md / .cursor/rules / .clinerules / .windsurf/rules.",
   "type": "module",
   "bin": {
@@ -34,7 +35,7 @@
   },
   "homepage": "https://agentsmd.apimesh.xyz",
   "dependencies": {
-    "@mbeato/agentcontext": "file:../agentcontext"
+    "@mbeato/agentcontext": "^0.1.0"
   },
   "devDependencies": {
     "@types/bun": "latest",

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.mbeato/agentcontext",
+  "description": "Normalize AGENTS.md / CLAUDE.md / .cursor/rules / .clinerules / .windsurf/rules from one source.",
+  "repository": {
+    "url": "https://github.com/mbeato/agentcontext-mcp",
+    "source": "github"
+  },
+  "version": "0.1.1",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@mbeato/agentcontext-mcp",
+      "version": "0.1.1",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}
