@@ -1,5 +1,5 @@
-#!/usr/bin/env bun
 // Thin wrapper over @mbeato/agentcontext's MCP server.
+// (Bun build injects #!/usr/bin/env node into dist/server.js.)
 // All logic lives in @mbeato/agentcontext/mcp — this package exists only so
 // MCP-registry adopters can `npx @mbeato/agentcontext-mcp` without thinking
 // about the parent package.

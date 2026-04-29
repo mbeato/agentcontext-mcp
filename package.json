@@ -1,19 +1,22 @@
 {
   "name": "@mbeato/agentcontext-mcp",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "mcpName": "io.github.mbeato/agentcontext",
   "description": "MCP server for @mbeato/agentcontext — exposes read_agent_context and convert_agent_context tools so any MCP-aware agent can normalize CLAUDE.md / AGENTS.md / .cursor/rules / .clinerules / .windsurf/rules.",
   "type": "module",
   "bin": {
-    "agentcontext-mcp": "./src/index.ts"
+    "agentcontext-mcp": "./dist/server.js"
   },
   "files": [
     "src",
+    "dist",
     "README.md"
   ],
   "scripts": {
     "test": "bun test",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "build": "bun build ./src/index.ts --outfile dist/server.js --target=node --minify --banner '#!/usr/bin/env node'",
+    "prepublishOnly": "bun run build"
   },
   "keywords": [
     "mcp",
